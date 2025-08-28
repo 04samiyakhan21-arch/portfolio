@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password | Azam Trust Hostel</title>
+  <link rel="stylesheet" href="reset.css" />
+</head>
+<body>
+  <header>
+    <div>
+      <h1>ROOM4U</h1>
+    </div>
+    <nav>
+      <ul>
+        <li><a href="index1.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="hostel.html">Our Hostels</a></li>
+        <li><a href="services.html">Services</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="register.html">Sign Up</a></li>
+        <li><a href="login.html">Login</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="reset-section">
+      <h2>RESET PASSWORD</h2>
+      <form action="/reset-password" method="POST">
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="birthdate">Birthdate (dd-mm-yyyy):</label>
+        <input type="text" id="birthdate" name="birthdate" placeholder="dd-mm-yyyy" required />
+
+        <div class="buttons">
+          <button type="submit">Submit</button>
+          <button type="reset">Reset</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>©2025 Hostel Allocation System. All rights reserved.<a href="#">Azamtrust.org</a></p>
+  </footer>
+</body>
+</html>

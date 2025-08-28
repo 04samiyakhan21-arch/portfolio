@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Staff Login </title>
+  <link rel="stylesheet" href="admin.css" />
+</head>
+<body>
+  <header>
+    <h1>ROOM4U Hostel Management System</h1>
+    <p> Pune</p>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <a href="admin.html">LOGIN</a>
+      <a href="cont.html">CONTACT US</a>
+    </aside>
+
+    <main class="login-form">
+      <h2>Login</h2>
+      <form action="/login" method="POST">
+        <label for="username">User Name:</label>
+        <input type="text" id="username" name="username" required />
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required />
+
+        <label for="role">Login As:</label>
+        <select id="role" name="role">
+          <option value="accountant">Accountant</option>
+          <option value="admin">Admin</option>
+          <option value="incharge">Incharge</option>
+          <!-- Add other roles as needed -->
+        </select>
+
+        <div class="actions">
+          <a href="forget.html">Forgot Password?</a>
+          <button type="submit">Login</button>
+        </div>
+      </form>
+    </main>
+  </div>
+</body>
+</html>

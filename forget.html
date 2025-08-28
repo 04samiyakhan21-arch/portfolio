@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reset Password</title>
+  <link rel="stylesheet" href="forget.css" />
+</head>
+<body>
+  <header>
+    <h1>ROOM4U Hostel Management System</h1>
+    <p> Pune</p>
+  </header>
+
+  <div class="container">
+    <aside class="sidebar">
+      <a href="admin.html">LOGIN</a>
+      <a href="cont.html">CONTACT US</a>
+    </aside>
+
+    <main class="form-section">
+      <h2>Reset Password</h2>
+      <form action="/reset-password" method="POST">
+        <label for="loginId">Login Id*</label>
+        <input type="text" id="loginId" name="loginId" required />
+
+        <label for="securityQuestion">Security Question*</label>
+        <select id="securityQuestion" name="securityQuestion" required>
+          <option value="">-- Select a question --</option>
+          <option value="pet">What is your pet's name?</option>
+          <option value="school">What was your first school?</option>
+          <option value="mother">What is your mother's maiden name?</option>
+        </select>
+
+        <label for="securityAnswer">Security Answer*</label>
+        <input type="text" id="securityAnswer" name="securityAnswer" required />
+
+        <label for="newPassword">New Password*</label>
+        <input type="password" id="newPassword" name="newPassword" required />
+
+        <button type="submit">Reset Password</button>
+      </form>
+    </main>
+  </div>
+</body>
+</html>
